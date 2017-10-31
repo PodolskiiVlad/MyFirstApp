@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryRed</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <!--<item name="profilePhoto">@mipmap/ic_launcher_round</item>-->
+        <!--<item name="nameDrop-down" />-->
+        <!--<item name="friends">@drawable/ic_friends</item>-->
+        <!--<item name="bell">@drawable/ic_bell</item>-->
+        <!--<item name="menu">@drawable/ic_menu</item>-->
+    </style>
+</resources>

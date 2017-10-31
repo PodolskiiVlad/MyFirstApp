@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppToolbarStyle">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryRed</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryRed</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <!--<item name="profilePhoto">@mipmap/ic_launcher_round</item>-->
+        <!--<item name="nameDrop-down"/>-->
+        <!--<item name="friends">@drawable/ic_friends</item>-->
+        <!--<item name="bell">@drawable/ic_bell</item>-->
+        <!--<item name="menu">@drawable/ic_menu</item>-->
+    </style>
+
+</resources>
