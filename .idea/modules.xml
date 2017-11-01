@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyFirstApp.iml" filepath="$PROJECT_DIR$/MyFirstApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activityinteraction/activityinteraction.iml" filepath="$PROJECT_DIR$/activityinteraction/activityinteraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" filepath="$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0111_fromthis/p0111_fromthis.iml" filepath="$PROJECT_DIR$/p0111_fromthis/p0111_fromthis.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0180constantlayoutintro/p0180constantlayoutintro.iml" filepath="$PROJECT_DIR$/p0180constantlayoutintro/p0180constantlayoutintro.iml" />
     </modules>
   </component>

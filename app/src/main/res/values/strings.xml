@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My First App</string>
+    <string name="text">TExt</string>
+    <string name="hello_wolrd">Hello World!</string>
 </resources>
