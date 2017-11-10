@@ -4,4 +4,8 @@
     <string name="btnTopText">Верхняя кнопка</string>
     <string name="tvBottomText">Нижний текст</string>
     <string name="btnBottomText">Нижняя кнопка</string>
+    <string name="show_time">Show time</string>
+    <string name="show_date">Show date</string>
+    <string name="textview">TextView</string>
+    <string name="back">back</string>
 </resources>

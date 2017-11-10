@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">From 58 Les (Dialog)</string>
+    <string name="exit">Exit</string>
+    <string name="save_data">Сохранить данные?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="cancel">Отмена</string>
+    <string name="saved">Сохранено</string>
+    <string name="items">Items</string>
+    <string name="adapter">Adapter</string>
+    <string name="cursor">Cursor</string>
+    <string name="dialog_settings_vol">Settings volume</string>
+    <string name="dialog_settings_sense">Settings sense</string>
+    <string name="dialog_about_title">About title</string>
+    <string name="dialog_about_message">About message</string>
+    <string name="dialog_rate_title">Rate title</string>
+    <string name="dialog_rate_message">Rate message</string>
+    <string name="dialog_rate_ok">Rate ok</string>
+    <string name="dialog_rate_cancel">Rate cancel</string>
+    <string name="dialog_rate_buy">Rate buy</string>
+    <string name="dialog_settings_title">Settings title</string>
+    <string name="type_here">Type here...</string>
+    <string name="ok">Ok</string>
+</resources>

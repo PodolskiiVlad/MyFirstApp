@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">From 30 Les</string>
+    <string name="hello_world">Hello world</string>
+    <string name="alignment">Alignment</string>
+    <string name="color">Color</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="linear_layout">Linear layout:</string>
+    <string name="relative_layout">Relative layout:</string>
+    <string name="layout_with_textview">Layout with TextView</string>
+    <string name="staff_list">Staff List</string>
+    <string name="textview">TextView</string>
+    <string name="worker_position">Должность: %s</string>
+    <string name="worker_salary">Оклад: %s</string>
+    <string name="hello">Hello</string>
+    <string name="get_checked_items">Get checked items</string>
+    <string name="checkbox">CheckBox</string>
+    <string-array name="names">
+        <item>Иван</item>
+        <item>Марья</item>
+        <item>Петр</item>
+        <item>Антон</item>
+        <item>Даша</item>
+        <item>Борис</item>
+        <item>Костя</item>
+        <item>Игорь</item>
+        <item>Анна</item>
+        <item>Денис</item>
+        <item>Вадим</item>
+        <item>Ольга</item>
+        <item>Сергей</item>
+    </string-array>
+    <string-array name="mobile_groups">
+        <item>HTC</item>
+        <item>Samsung</item>
+        <item>LG</item>
+    </string-array>
+    <string-array name="HTC_phones">
+        <item>Sensation</item>
+        <item>Desire</item>
+        <item>Wildfire</item>
+        <item>Hero</item>
+    </string-array>
+    <string-array name="Samsung_phones">
+        <item>Galaxy S II</item>
+        <item>Galaxy Nexus</item>
+        <item>Wave</item>
+    </string-array>
+    <string-array name="LG_phones">
+        <item>Optimus</item>
+        <item>Optimus Link</item>
+        <item>Optimus Black</item>
+        <item>Optimus One</item>
+    </string-array>
+</resources>

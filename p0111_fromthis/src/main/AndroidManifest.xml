@@ -16,7 +16,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".TimeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.showtime" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DateActivity"
+            android:label="Simple date">
+            <intent-filter>
+                <action android:name="android.intent.action.showdate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DateExActivity"
+            android:label="Extended date">
+            <intent-filter>
+                <action android:name="android.intent.action.showdate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DateTimeInfoActivity" android:label="Date Time Info">
+            <intent-filter>
+                <action android:name="android.intent.action.showdate" />
+                <action android:name="android.intent.action.showtime" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

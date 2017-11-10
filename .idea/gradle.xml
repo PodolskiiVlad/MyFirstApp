@@ -8,11 +8,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/activityinteraction" />
+            <option value="$PROJECT_DIR$/activity_interaction" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/from30les" />
+            <option value="$PROJECT_DIR$/from50les" />
+            <option value="$PROJECT_DIR$/from58les(dialog)" />
+            <option value="$PROJECT_DIR$/listviewdemo" />
             <option value="$PROJECT_DIR$/p0031firstproject" />
             <option value="$PROJECT_DIR$/p0111_fromthis" />
             <option value="$PROJECT_DIR$/p0180constantlayoutintro" />
+            <option value="$PROJECT_DIR$/text_on_activity_result" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

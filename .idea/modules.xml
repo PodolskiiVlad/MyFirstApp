@@ -3,11 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyFirstApp.iml" filepath="$PROJECT_DIR$/MyFirstApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/activityinteraction/activityinteraction.iml" filepath="$PROJECT_DIR$/activityinteraction/activityinteraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activity_interaction/activity_interaction.iml" filepath="$PROJECT_DIR$/activity_interaction/activity_interaction.iml" />
+      <module fileurl="file://C:\Users\solov\AndroidStudioProjects\MyFirstApp\activity_interaction\activityinteraction.iml" filepath="C:\Users\solov\AndroidStudioProjects\MyFirstApp\activity_interaction\activityinteraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/from30les/from30les.iml" filepath="$PROJECT_DIR$/from30les/from30les.iml" />
+      <module fileurl="file://$PROJECT_DIR$/from50les/from50les.iml" filepath="$PROJECT_DIR$/from50les/from50les.iml" />
+      <module fileurl="file://$PROJECT_DIR$/from58les(dialog)/from58les(dialog).iml" filepath="$PROJECT_DIR$/from58les(dialog)/from58les(dialog).iml" />
+      <module fileurl="file://$PROJECT_DIR$/listviewdemo/listviewdemo.iml" filepath="$PROJECT_DIR$/listviewdemo/listviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" filepath="$PROJECT_DIR$/p0031firstproject/p0031firstproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0111_fromthis/p0111_fromthis.iml" filepath="$PROJECT_DIR$/p0111_fromthis/p0111_fromthis.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0180constantlayoutintro/p0180constantlayoutintro.iml" filepath="$PROJECT_DIR$/p0180constantlayoutintro/p0180constantlayoutintro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/text_on_activity_result/text_on_activity_result.iml" filepath="$PROJECT_DIR$/text_on_activity_result/text_on_activity_result.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/editActivityDialogTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/sometext" />
+    <EditText
+        android:id="@+id/editActivityDialogEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dots"
+        android:layout_below="@+id/editActivityDialogTitleText"/>
+    <Button
+        android:id="@+id/editActivityDialogBtnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editActivityDialogEditText"
+        android:layout_alignParentEnd="true"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>
