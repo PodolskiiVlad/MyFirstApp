@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="arrowColor">#AAAAAA</color>
+    <color name="backgroundColor">#CCCCCC</color>
+    <color name="articleFrame">#EEEEEE</color>
+    <color name="photoTint">#99000000</color>
+    <color name="titleTextColor">#FFFFFF</color>
+    <color name="articleListBackground">#FFFFFF</color>
+</resources>

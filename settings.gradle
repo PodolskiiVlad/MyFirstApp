@@ -1,1 +1,1 @@
-include ':app', ':p0031firstproject', ':p0180constantlayoutintro', ':activity_interaction', ':p0111_fromthis', ':text_on_activity_result', ':from30les', ':from50les', ':listviewdemo', ':from58les(dialog)'
+include ':app', ':p0031firstproject', ':p0180constantlayoutintro', ':activity_interaction', ':p0111_fromthis', ':text_on_activity_result', ':from30les', ':from50les', ':listviewdemo', ':from58les(dialog)', ':fromles34.sqlite', ':news_api_demo', ':json&rest_test', ':coordinator_layout'
