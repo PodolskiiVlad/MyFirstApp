@@ -75,6 +75,7 @@ public class PaperSourceArticlesActivity extends AppCompatActivity {
         NetworkUtils response = new NetworkUtils();
         if (!response.isOnline(this)) {
             updateUi(sourceID);
+            return;
         }
 
         response.getArticles(response.makeURLToRequest(getIntent(), INTENT_SOURCE_ID_KEY),
