@@ -2,26 +2,15 @@ package com.example.jsonresttest;
 
 import java.util.List;
 
-public class SourcesList {
+class SourcesList {
 
-    private String status;
     private List<Source> sources;
 
-
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public List<Source> getSources() {
-        return sources;
-    }
-
-    public void setSources(List<Source> sources) {
+    public SourcesList(List<Source> sources) {
         this.sources = sources;
+    }
+
+    List<Source> getSources() {
+        return sources;
     }
 }

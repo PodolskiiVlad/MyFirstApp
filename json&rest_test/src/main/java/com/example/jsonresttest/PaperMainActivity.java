@@ -5,10 +5,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PaperMainActivity extends AppCompatActivity {
@@ -16,6 +17,14 @@ public class PaperMainActivity extends AppCompatActivity {
     private ListView sourcesListView;
     private SourcesAdapter adapter;
     private ProgressBar progressBar;
+    private AdapterView.OnItemClickListener onItemClickListener = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            PaperSourceArticlesActivity.launch(
+                    PaperMainActivity.this,
+                    ((Source) parent.getItemAtPosition(position)).getId());
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,46 +36,37 @@ public class PaperMainActivity extends AppCompatActivity {
         sourcesListView = findViewById(R.id.sourcesListView);
 
         progressBar.setVisibility(View.VISIBLE);
-
+        adapter = new SourcesAdapter(this, new ArrayList<Source>());
+        sourcesListView.setAdapter(adapter);
         getResponse();
     }
 
     void getResponse() {
-        ServerResponse response = new ServerResponse(this);
-        if (response.isOnline()) {
-            response.getSources(new SourcesCallback() {
-                @Override
-                public void onResult(final List<Source> sourcesList) {
-                    PaperDatabase database = new PaperDatabase(PaperMainActivity.this, sourcesList);
-                    try {
-                        adapter = makeAdapter(database.getSourceList());
-                    } catch (NoDatabaseException e) {
-                        e.printStackTrace();
-                    }
-                    new Handler(Looper.getMainLooper()).post(new Runnable() {
-                        @Override
-                        public void run() {
-                            progressBar.setVisibility(View.INVISIBLE);
-                            sourcesListView.setAdapter(adapter);
-
-                            sourcesListView.setOnItemClickListener(adapter.onItemClickListener);
-                        }
-                    });
-                }
-            });
-        } else {
-            try {
-                adapter = makeAdapter(new PaperDatabase(this).getSourceList());
-                progressBar.setVisibility(View.INVISIBLE);
-                sourcesListView.setAdapter(adapter);
-                sourcesListView.setOnItemClickListener(adapter.onItemClickListener);
-            } catch (NoDatabaseException e) {
-                Toast.makeText(this, "No data found. Please connect the internet", Toast.LENGTH_SHORT).show();
-            }
+        NetworkUtils response = new NetworkUtils();
+        if (!response.isOnline(this)) {
+            updateUi();
+            return;
         }
+
+        response.getSources(new Callback<Source>() {
+            @Override
+            public void onResult(final List<Source> sourcesList) {
+                PaperApplication.from(PaperMainActivity.this).getDatabase().updateSourceTable(sourcesList);
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        updateUi();
+                    }
+                });
+            }
+        });
     }
 
-    SourcesAdapter makeAdapter(List<Source> sourceList) {
-        return new SourcesAdapter(this, sourceList);
+    private void updateUi() {
+        progressBar.setVisibility(View.INVISIBLE);
+        List<Source> sourceList = PaperApplication.from(this).getDatabase().getSourceList();
+        adapter.clear();
+        adapter.addAll(sourceList);
+        sourcesListView.setOnItemClickListener(onItemClickListener);
     }
 }
